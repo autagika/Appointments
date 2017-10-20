@@ -4,7 +4,6 @@
 // This script contains the code for all the events handlers. The events are new , add, cancel and search. 
 // It also searches and displays the database records based on the search string
 
-
 //getAppointments function gets the appointments table from the database
 // when a search is done
 
@@ -50,7 +49,7 @@ $(document)
 				function() {
 
 					$(window).load(function() {
-						
+
 						getAppointments("");
 					});
 
@@ -61,22 +60,20 @@ $(document)
 									function(e) {
 
 										$("#successmessage").empty();
-										$("#errorMessage").empty();								
-										
+										$("#errorMessage").empty();
+
 										var appointmenttime = $(
 												'#datetimepicker').val();
 										var description = $('#description')
 												.val();
 										var error = 0;
 
-										
-
 										if (!$('#datetimepicker').val()) {
 
 											error = 1;
 
 											$("#errorMessage").append(
-													'Please enter the appointment time'
+													'Please enter the appointment date and time'
 															+ '<br /><br />');
 
 										}
@@ -102,18 +99,18 @@ $(document)
 
 										if (currenttime > apt_time) {
 											error = 1;
-											$("#errorMessage")
+											 $("#errorMessage")
 													.append(
 															'<br />'
-																	+ 'Cannot make appointments in the past. Please check Appointment date and time '
+																	+ 'Cannot make appointments in the past. Please check appointment date and time '
 																	+ '<br /><br />');
 										}
 
 										if (error === 1) {
-											
-											return false;
+
+											 return false;
 										}
-										
+
 										return true;
 
 									});
@@ -124,36 +121,33 @@ $(document)
 						$("#apptform").show();
 					});
 
-					
-
 					// If the cancel button is clicked, hide the appointment form and show the new button
 					$("#cancel").click(function() {
-						
+
 						$("#errorMessage").empty();
 
 						$("#successmessage").empty();
-						
+
 						$("#frontend").show();
 						$("#apptform").hide();
 
 					});
 
-					
-					
 					// Show the Appointment widget
 					$('#datetimepicker').datetimepicker({});
 
 					// When the search button is clicked, search the database using the search string and return back the
 					// database records
-					$("#search").click(function() {
-						$("#table").empty();
+					$("#search").click(
+							function() {
+								$("#table").empty();
 
-						var appointments = $('#appointments').val();
+								$('<caption />').html("Appointments")
+										.prependTo("#table");
+								var appointments = $('#appointments').val();
 
-						getAppointments(appointments);
+								getAppointments(appointments);
 
-					});
-
-					
+							});
 
 				});
