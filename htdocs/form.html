@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Appointment Form</title>
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+
+
+</head>
+<body>
+	<div id="errorMessage"></div>
+	<p id="successmessage"></p> 
+	<div id="frontend">
+		<input type="button" name="new" id="new" value="NEW">
+
+	</div>
+    <br />
+	<form action="./add.cgi" method="post" id="apptform">
+		<input type="submit" name="add" id="add" value="ADD" /> <input
+			type="button" name="cancel" id="cancel" value="CANCEL" /> <br /> <br />
+		<label for="datetimepicker">DATE</label><br /> 
+		<input type="text"
+			id="datetimepicker" name="datetimepicker" class="datetimepicker" />
+
+		<br /> <br /> 
+		
+		
+		<label for="description">DESCRIPTION</label> <br />
+		<input
+			type="text" name="description" id="description" />
+			
+			
+	</form>
+
+	<br />
+	<br />
+	
+	<div id="frontend1">
+	<input type="text" name="appointments" id="appointments">
+	<input type="submit" name="search" id="search" value="SEARCH">
+	</div>
+	
+	<br />
+	<br />
+	<table id="table" border="1">
+	<caption> Appointments </caption>	
+	</table>
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css"
+		href="datetimepicker-master/datetimepicker-master/jquery.datetimepicker.css"/ >
+	<script src="datetimepicker-master/datetimepicker-master/jquery.js"></script>
+	<script
+		src="datetimepicker-master/datetimepicker-master/build/jquery.datetimepicker.full.min.js"></script>
+
+	<script src="js/appointments.js"></script>
+
+
+
+</body>
+</html>

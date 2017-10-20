@@ -1,0 +1,104 @@
+#add {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
+#cancel {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#new {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#search {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+
+input[type=text] {
+    
+    padding: 4px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ff6666;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+} 
+
+
+
+label {
+	color: #000066;
+}
+
+
+#apptform {
+	display: none;
+}
+
+table {
+	
+	border: 5px solid #000066;
+}
+
+td,th {
+	border: 1px solid #000066;
+	padding: 0.5em;
+	font-family: Arial, sans-serif;
+}
+caption {
+	font-family: Arial, sans-serif;
+	
+	font-size: 20px;
+	padding-bottom:0.5;
+	margin:10px;
+	
+}
+
+
+#errorMessage {
+	color: red;
+	font-weight:bold;
+	font-size:16px;
+	font-family: Arial, sans-serif;
+}
+
+#successmessage {
+	color:green;
+	font-weight:bold;
+	font-size:16px;
+	font-family: Arial, sans-serif;
+}
